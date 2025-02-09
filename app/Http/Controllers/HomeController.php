@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function welcome()
     {
 
-        return view('welcome', [
+        return view('web.index', [
             // 'blogs' => Blog::with('user')->inRandomOrder()->latest()->take(3)->get(),
             // 'setting' => Settings::query()->first(),
             'insurances' => Insurance::orderByDesc('id')->get(),

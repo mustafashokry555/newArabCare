@@ -45,9 +45,9 @@
                 </div>
                 <ul class="main-nav">
                     @auth
-                        <li class="{{ Request::urlIs('/') ? 'active' : '' }}">
+                        {{-- <li class="{{ Request::urlIs('/') ? 'active' : '' }}">
                             <a href="{{ url('/') }}">Home</a>
-                        </li>
+                        </li> --}}
                     @else
                         <li class="{{ Request::routeIs('/') ? 'active' : '' }}">
                             <a href="/">Home</a>
